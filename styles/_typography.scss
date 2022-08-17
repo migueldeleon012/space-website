@@ -1,0 +1,110 @@
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  font-family: 'Bellefair', serif;
+}
+
+.heading-5,
+.subheading-2,
+.nav-text {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.body-text {
+  font-family: 'Barlow', sans-serif;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.subheading-1,
+.subheading-2,
+.nav-text {
+  text-transform: uppercase;
+}
+
+.heading-1 {
+  font-size: 80px;
+  line-height: 100px;
+  margin: 16px 0;
+}
+
+.heading-2 {
+  font-size: 56px;
+}
+
+.heading-3 {
+  font-size: 40px;
+}
+
+.heading-4,
+.heading-5 {
+  font-size: 16px;
+}
+
+.heading-5 {
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
+.subheading-1 {
+  font-size: 16px;
+}
+
+.subheading-2 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+
+.body-text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.nav-text {
+  letter-spacing: 2.7px;
+  font-size: 16px;
+}
+
+.light-blue {
+  color: $light-blue;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-1 {
+    font-size: 150px;
+    line-height: 150px;
+    margin: 24px 0;
+  }
+
+  .heading-2 {
+    font-size: 100px;
+  }
+
+  .heading-3 {
+    font-size: 56px;
+  }
+
+  .heading-4 {
+    font-size: 32px;
+  }
+
+  .heading-5 {
+    font-size: 28px;
+    line-height: 24px;
+  }
+
+  .body-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    text-align: left;
+  }
+}

@@ -1,0 +1,27 @@
+$dark-blue: #0b0d17;
+$light-blue: #d0d6f9;
+$white: #ffffff;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white;
+  font-weight: 400;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@import 'homepage';
+@import 'navbar';
+@import 'typography';
