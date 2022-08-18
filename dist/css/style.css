@@ -194,6 +194,7 @@ a {
     opacity: 1;
     height: 96px;
     width: 450px;
+    z-index: 100;
   }
   .nav .close-nav {
     display: none;
