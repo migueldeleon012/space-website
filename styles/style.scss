@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 @mixin flex {
   display: flex;
   align-items: center;
@@ -25,3 +29,4 @@ a {
 @import 'homepage';
 @import 'navbar';
 @import 'typography';
+@import 'destinations';

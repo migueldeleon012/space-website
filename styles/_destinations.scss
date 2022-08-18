@@ -1,0 +1,136 @@
+.destinations {
+  background: url('../../assets/destination/background-destination-mobile.jpg');
+  background-size: cover;
+  padding: 0 24px;
+  min-height: 100vh;
+
+  &__main {
+    padding-top: 88px;
+  }
+
+  &__img {
+    width: 170px;
+    margin: 32px auto 25px auto;
+  }
+
+  &__names {
+    @include flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    height: 28px;
+
+    li {
+      height: 100%;
+    }
+
+    .active {
+      position: relative;
+    }
+
+    .active::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $white;
+    }
+  }
+
+  &__info {
+    h3 {
+      padding-bottom: 8px;
+    }
+    p {
+      padding-bottom: 32px;
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #383b4b;
+    margin: 32px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    background: url('../../assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    padding: 0 38.5px;
+
+    &__main {
+      padding-top: 136px;
+      h1 {
+        text-align: left;
+      }
+    }
+
+    &__img {
+      width: 300px;
+      margin: 60px auto 53px auto;
+    }
+
+    &__names {
+      width: 285.5px;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin: 32px auto 8px auto;
+    }
+
+    .body-text {
+      width: 573px;
+      margin: 0 auto;
+    }
+
+    .line {
+      margin: 49px 0 28px 0;
+    }
+
+    &__info {
+      @include flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations {
+    padding: 0 163px 112px 166.5px;
+    @include flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__img {
+      width: 445px;
+      margin-left: 66.5px;
+      margin-top: 97px;
+    }
+
+    &__section {
+      width: 445px;
+    }
+
+    &__names {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 37px 0 14px 0;
+    }
+
+    .body-text {
+      width: 100%;
+    }
+
+    .line {
+      margin: 54px 0 28px 0;
+    }
+  }
+}

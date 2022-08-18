@@ -31,7 +31,6 @@
 
     li {
       margin-bottom: 32px;
-      list-style: none;
 
       span {
         font-weight: 700;
@@ -112,7 +111,6 @@
         width: 100%;
         height: 3px;
         position: absolute;
-        top: 100%;
         background-color: $white;
         top: calc(100% - 3px);
       }

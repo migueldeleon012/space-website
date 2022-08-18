@@ -1,7 +1,8 @@
 .heading-1,
 .heading-2,
 .heading-3,
-.heading-4 {
+.heading-4,
+.subheading-1 {
   font-family: 'Bellefair', serif;
 }
 
@@ -51,7 +52,7 @@
 }
 
 .subheading-1 {
-  font-size: 16px;
+  font-size: 28px;
 }
 
 .subheading-2 {
@@ -71,6 +72,10 @@
 
 .light-blue {
   color: $light-blue;
+}
+
+.opacity-5 {
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
