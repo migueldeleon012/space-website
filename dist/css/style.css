@@ -98,7 +98,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .homepage {
-    padding: 131px 165px;
+    padding: 100px;
     background: url("../../assets/home/background-home-desktop.jpg");
     background-size: cover;
     display: -webkit-box;
@@ -118,6 +118,18 @@ a {
   .homepage__main,
   .homepage .button-container {
     margin: 0;
+  }
+  .button-container button {
+    width: 250px;
+  }
+  .button-container button p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .homepage {
+    padding: 131px 165px;
   }
   .homepage .button-container button {
     width: 272px;
