@@ -100,6 +100,16 @@
           width: 100%;
         }
 
+        p {
+          height: 100%;
+
+          a {
+            height: 100%;
+            @include flex;
+            gap: 1ch;
+          }
+        }
+
         span {
           display: none;
         }

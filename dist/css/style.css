@@ -255,6 +255,19 @@ li {
   .nav__list li:hover::after {
     width: 100%;
   }
+  .nav__list li p {
+    height: 100%;
+  }
+  .nav__list li p a {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1ch;
+  }
   .nav__list li span {
     display: none;
   }
@@ -383,7 +396,7 @@ li {
     line-height: 24px;
   }
   .body-text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 28px;
   }
 }
@@ -504,21 +517,43 @@ li {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .destinations {
-    padding: 0 163px 112px 166.5px;
+    padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .destinations .body-text {
+    width: 100%;
+  }
+  .destinations__main {
+    padding: 0;
+  }
+  .destinations__section {
+    width: 350px;
+  }
+  .destinations__names {
+    margin: 0;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations {
+    padding: 0 163px 112px 166.5px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .destinations__img {
     width: 445px;
@@ -528,17 +563,20 @@ li {
   .destinations__section {
     width: 445px;
   }
-  .destinations__names {
-    margin: 0;
-  }
   .destinations h2 {
     margin: 37px 0 14px 0;
   }
-  .destinations .body-text {
-    width: 100%;
-  }
   .destinations .line {
     margin: 54px 0 28px 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .destinations {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
