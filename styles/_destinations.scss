@@ -58,7 +58,7 @@
 
 @media screen and (min-width: 768px) {
   .destinations {
-    background: url('../../assets/destination/background-destination-mobile.jpg');
+    background: url('../../assets/destination/background-destination-tablet.jpg');
     background-size: cover;
     padding: 0 38.5px;
 
@@ -130,6 +130,8 @@
     padding: 0 163px 112px 166.5px;
     align-items: flex-end;
     justify-content: space-between;
+    background: url('../../assets/destination/background-destination-tablet.jpg');
+    background-size: cover;
 
     &__img {
       width: 445px;
