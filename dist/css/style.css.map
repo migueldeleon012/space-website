@@ -7,7 +7,8 @@
         "../../styles/_navbar.scss",
         "../../styles/_typography.scss",
         "../../styles/_destinations.scss",
-        "../../styles/_crew.scss"
+        "../../styles/_crew.scss",
+        "../../styles/_technology.scss"
     ],
     "names": [],
     "file": "style.css"
