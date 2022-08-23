@@ -17,6 +17,12 @@ li {
   list-style: none;
 }
 
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #383b4b;
+}
+
 .homepage {
   width: 100%;
   height: 100vh;
@@ -154,6 +160,7 @@ li {
   position: absolute;
   top: 24px;
   left: 24px;
+  z-index: 100;
 }
 
 .main {
@@ -294,6 +301,16 @@ li {
   .nav__list li span {
     display: inline;
   }
+  .nav__line {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -443px;
+    width: 473px;
+    height: 1px;
+    background-color: #ffffff;
+  }
 }
 
 .heading-1,
@@ -336,7 +353,7 @@ li {
 }
 
 .heading-3 {
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .heading-4,
@@ -376,6 +393,10 @@ li {
   opacity: 0.5;
 }
 
+.opacity-25 {
+  opacity: 0.25;
+}
+
 @media screen and (min-width: 768px) {
   .heading-1 {
     font-size: 150px;
@@ -384,6 +405,25 @@ li {
   }
   .heading-2 {
     font-size: 100px;
+  }
+  .heading-3 {
+    font-size: 40px;
+  }
+  .heading-4 {
+    font-size: 24px;
+  }
+  .heading-5 {
+    font-size: 20px;
+  }
+  .body-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    text-align: left;
   }
   .heading-3 {
     font-size: 56px;
@@ -397,13 +437,7 @@ li {
   }
   .body-text {
     font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  * {
-    text-align: left;
+    line-height: 32px;
   }
 }
 
@@ -465,15 +499,12 @@ li {
 }
 
 .destinations .line {
-  width: 100%;
-  height: 1px;
-  background-color: #383b4b;
   margin: 32px 0;
 }
 
 @media screen and (min-width: 768px) {
   .destinations {
-    background: url("../../assets/destination/background-destination-mobile.jpg");
+    background: url("../../assets/destination/background-destination-tablet.jpg");
     background-size: cover;
     padding: 0 38.5px;
   }
@@ -554,6 +585,8 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    background: url("../../assets/destination/background-destination-tablet.jpg");
+    background-size: cover;
   }
   .destinations__img {
     width: 445px;
@@ -577,6 +610,205 @@ li {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 500px;
+  }
+}
+
+.crew {
+  background: url(../../assets/crew/background-crew-mobile.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+.crew h2 {
+  padding-top: 88px;
+}
+
+.crew__img {
+  height: 222px;
+  margin: 32px auto;
+  position: relative;
+}
+
+.crew__img .line {
+  position: absolute;
+  top: 100%;
+}
+
+.crew__info .circles {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+
+.crew__info .circles .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.crew__info .circles .circle a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.crew__info .texts h3 {
+  margin: 32px 0 8px 0;
+}
+
+.crew__info .texts h1 {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .crew {
+    background: url(../../assets/crew/background-crew-tablet.jpg);
+    background-size: cover;
+  }
+  .crew .heading-5 {
+    text-align: left;
+    padding-top: 136px;
+  }
+  .crew__main, .crew__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .crew__main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .crew__img {
+    height: 572px;
+    margin: 0;
+  }
+  .crew__img .line {
+    display: none;
+  }
+  .crew__info {
+    margin-top: 60px;
+    width: 458px;
+  }
+  .crew__info p {
+    margin-bottom: 40px;
+  }
+  .crew__info .circles {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .crew {
+    background: url(../../assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .crew__main {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .crew {
+    padding: 0 137px 0 166.5px;
+    position: relative;
+  }
+  .crew .heading-5 {
+    padding-top: 212px;
+  }
+  .crew__main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .crew__img {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 137px;
+  }
+  .crew .commander {
+    padding-top: 198px;
+  }
+  .crew .specialist {
+    padding-top: 246px;
+  }
+  .crew .engineer {
+    padding-top: 294px;
+  }
+  .crew .pilot {
+    padding-top: 240px;
+  }
+  .crew__info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 614px;
+  }
+  .crew__info .circles {
+    margin: 0;
+    margin-bottom: 104px;
+    gap: 24px;
+  }
+  .crew__info .circles .circle {
+    width: 15px;
+    height: 15px;
+  }
+  .crew__info .texts {
+    width: auto;
+  }
+  .crew__info .texts h3 {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .crew__info .texts h2 {
+    margin-bottom: 27px;
+  }
+  .crew__info .texts .body-text {
+    width: 444px;
+    margin-bottom: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
