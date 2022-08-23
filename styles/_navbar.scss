@@ -9,6 +9,7 @@
   position: absolute;
   top: 24px;
   left: 24px;
+  z-index: 100;
 }
 
 .main {
@@ -140,6 +141,16 @@
 
     &__list li span {
       display: inline;
+    }
+
+    &__line {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -443px;
+      width: 473px;
+      height: 1px;
+      background-color: $white;
     }
   }
 }
