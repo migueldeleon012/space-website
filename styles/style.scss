@@ -21,6 +21,12 @@ li {
   list-style: none;
 }
 
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #383b4b;
+}
+
 @mixin flex {
   display: flex;
   align-items: center;
@@ -30,3 +36,4 @@ li {
 @import 'navbar';
 @import 'typography';
 @import 'destinations';
+@import 'crew';
