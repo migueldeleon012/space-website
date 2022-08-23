@@ -38,7 +38,7 @@
 }
 
 .heading-3 {
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .heading-4,
@@ -78,6 +78,10 @@
   opacity: 0.5;
 }
 
+.opacity-25 {
+  opacity: 0.25;
+}
+
 @media screen and (min-width: 768px) {
   .heading-1 {
     font-size: 150px;
@@ -87,6 +91,29 @@
 
   .heading-2 {
     font-size: 100px;
+  }
+
+  .heading-3 {
+    font-size: 40px;
+  }
+
+  .heading-4 {
+    font-size: 24px;
+  }
+
+  .heading-5 {
+    font-size: 20px;
+  }
+
+  .body-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    text-align: left;
   }
 
   .heading-3 {
@@ -104,12 +131,6 @@
 
   .body-text {
     font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  * {
-    text-align: left;
+    line-height: 32px;
   }
 }
