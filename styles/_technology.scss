@@ -14,7 +14,7 @@
   }
 
   .circles {
-    display: flex;
+    @include flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
@@ -28,7 +28,7 @@
       margin-bottom: 26px;
 
       a {
-        display: flex;
+        @include flex;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -102,7 +102,7 @@
     }
 
     &__container {
-      display: flex;
+      @include flex;
       flex-direction: row-reverse;
       justify-content: space-between;
       gap: 130px;
@@ -121,7 +121,7 @@
     }
 
     &__main {
-      display: flex;
+      @include flex;
       align-items: center;
       width: 630px;
       gap: 80px;
