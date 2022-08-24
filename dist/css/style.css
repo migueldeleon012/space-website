@@ -81,7 +81,7 @@ li {
   border: none;
 }
 
-.homepage button p {
+.homepage button p a {
   color: #0b0d17;
 }
 
