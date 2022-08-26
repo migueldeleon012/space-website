@@ -15,7 +15,7 @@ closeNavButton.addEventListener('click', () => {
 //from here on out there's data handling for the pages
 import data from './data.json' assert { type: 'json' };
 
-//DESTINATIONS HANDLING
+//DESTINATIONS DATA HANDLING
 
 //destinations html
 const destinationHeading = document.querySelector('#destinationHeading');
@@ -33,7 +33,7 @@ const destinationData = data.data.destinations;
 
 destinations.forEach((destination, index) => {
   destination.addEventListener('click', () => {
-    //change data
+    //change data html
     destinationHeading.innerHTML = destinationData[index].header;
     destinationDescription.innerHTML = destinationData[index].description;
     destinationDistance.innerHTML = destinationData[index].distance;
@@ -52,3 +52,34 @@ destinations.forEach((destination, index) => {
   });
   return;
 });
+
+//CREW DATA HANDLING
+
+//crew html
+const crewImgContainer = document.querySelector('.crew__img');
+const crewImg = document.querySelector('.crew__img img');
+const crewPosition = document.querySelector('.crew .heading-4');
+const crewName = document.querySelector('.crew .heading-3');
+const crewDesc = document.querySelector('.crew .body-text');
+const crewCircle = document.querySelectorAll('.crew .circle');
+//get the data from json file
+const crewData = data.data.crew;
+
+crewCircle.forEach((circle, index) => {
+  circle.addEventListener('click', () => {
+    //change data html
+    crewImgContainer.className = `crew__img ${crewData[
+      index
+    ].position.toLowerCase()}`;
+    crewImg.src = crewData[index].img;
+    crewImg.alt = `Image: ${crewData[index].position} ${crewData[index].name}`;
+    crewPosition.innerHTML = crewData[index].position;
+    crewName.innerHTML = crewData[index].name;
+    crewDesc.innerHTML = crewData[index].description;
+    //change circle colour
+    crewCircle.forEach((circle) => circle.classList.add('opacity-5'));
+    circle.classList.remove('opacity-5');
+  });
+});
+
+console.log(crewDesc);
