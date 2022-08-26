@@ -696,7 +696,6 @@ li {
 }
 .technology__img {
   margin: 32px 0 34px 0;
-  background: url("../assets/technology/image-launch-vehicle-landscape.jpg");
 }
 .technology__img .img-desktop {
   display: none;
@@ -716,7 +715,7 @@ li {
   border-radius: 50%;
   margin-bottom: 26px;
 }
-.technology .circles .circle a {
+.technology .circles .circle p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -727,7 +726,7 @@ li {
 .technology .circles .active {
   background-color: #ffffff;
 }
-.technology .circles .active a {
+.technology .circles .active p {
   color: #0b0d17;
 }
 .technology__main {
