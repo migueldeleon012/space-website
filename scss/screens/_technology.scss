@@ -8,7 +8,6 @@
 
   &__img {
     margin: 32px 0 34px 0;
-    background: url('../assets/technology/image-launch-vehicle-landscape.jpg');
 
     .img-desktop {
       display: none;
@@ -29,7 +28,7 @@
       border-radius: 50%;
       margin-bottom: 26px;
 
-      a {
+      p {
         @include flex;
         justify-content: center;
         align-items: center;
@@ -41,7 +40,7 @@
     .active {
       background-color: $white;
 
-      a {
+      p {
         color: $dark-blue;
       }
     }
