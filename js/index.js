@@ -28,7 +28,7 @@ const destinationsImage = document.querySelector('.destinations__img img');
 const destinations = document.querySelectorAll('.destination');
 const destinationTextColor = document.querySelectorAll('.destination-text');
 let destinationActive = document.querySelector('.destination.active');
-//get the data of the destinations
+//get the data of the destinations on json file
 const destinationData = data.data.destinations;
 
 destinations.forEach((destination, index) => {
@@ -62,7 +62,7 @@ const crewPosition = document.querySelector('.crew .heading-4');
 const crewName = document.querySelector('.crew .heading-3');
 const crewDesc = document.querySelector('.crew .body-text');
 const crewCircle = document.querySelectorAll('.crew .circle');
-//get the data from json file
+//get the data of the crew from json file
 const crewData = data.data.crew;
 
 crewCircle.forEach((circle, index) => {
@@ -81,3 +81,29 @@ crewCircle.forEach((circle, index) => {
     circle.classList.remove('opacity-5');
   });
 });
+
+//TECHNOLOGY DATA HANDLING
+
+//technology html
+const tecnhologyImgMobile = document.querySelector('.technology .img-mobile');
+const tecnhologyImgDesktop = document.querySelector('.technology .img-desktop');
+const technologyCircles = document.querySelectorAll('.technology .circle');
+const technologyName = document.querySelector('.technology .heading-3');
+const technologyDesc = document.querySelector('.technology .body-text');
+//get the data of the technologies from json file
+const technologyData = data.data.technologies;
+
+technologyCircles.forEach((circle, index) => {
+  circle.addEventListener('click', () => {
+    //change data html
+    tecnhologyImgMobile.src = technologyData[index].imgMobile;
+    tecnhologyImgDesktop.src = technologyData[index].imgDesktop;
+    technologyName.innerHTML = technologyData[index].name;
+    technologyDesc.innerHTML = technologyData[index].description;
+    //change circle colour
+    technologyCircles.forEach((circle) => circle.classList.remove('active'));
+    circle.classList.add('active');
+  });
+});
+
+console.log(tecnhologyImgMobile);
