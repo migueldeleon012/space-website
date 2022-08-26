@@ -98,6 +98,8 @@ technologyCircles.forEach((circle, index) => {
     //change data html
     tecnhologyImgMobile.src = technologyData[index].imgMobile;
     tecnhologyImgDesktop.src = technologyData[index].imgDesktop;
+    tecnhologyImgMobile.alt = `Image: ${technologyData[index].name}`;
+    tecnhologyImgDesktop.alt = `Image: ${technologyData[index].name}`;
     technologyName.innerHTML = technologyData[index].name;
     technologyDesc.innerHTML = technologyData[index].description;
     //change circle colour
@@ -105,5 +107,3 @@ technologyCircles.forEach((circle, index) => {
     circle.classList.add('active');
   });
 });
-
-console.log(tecnhologyImgMobile);
