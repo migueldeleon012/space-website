@@ -81,5 +81,3 @@ crewCircle.forEach((circle, index) => {
     circle.classList.remove('opacity-5');
   });
 });
-
-console.log(crewDesc);
